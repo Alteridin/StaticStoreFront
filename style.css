@@ -1,0 +1,446 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    z-index: 2;
+    position: fixed;
+}
+
+body
+{
+    background-image: url("back.png");
+    background-size: cover;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: white;
+}
+  
+a:visited
+{
+    text-decoration: none;
+    color: white;
+}
+
+.header
+{
+    width: 100vw;
+    height: 40px;
+    position: fixed;
+    background-color: black;
+    flex-direction: row;
+}
+
+.centerText
+{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    z-index: 3;
+}
+
+.centerText img
+{
+    height: 40px;
+    width: 40px;
+}
+
+#headerText
+{
+    display: inline-block;
+}
+
+#headerText li
+{
+    float: left;
+    list-style-type: none;
+}
+
+.menuLogo
+{
+    position: relative;
+    display: inline-block;
+}
+
+#menuButt
+{
+    top: 0;
+    left: 0;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    background-color: transparent;
+}
+
+.menuLogo:hover #menuButt
+{
+    border: 1px solid white;
+    top: 0px;
+    z-index: 3;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+}
+
+#menuPng
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    float: right;
+    z-index: 3;
+}
+
+#menuOverlay
+{
+    position: fixed;
+    color: white;
+    left: 0;
+    top: 0;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    background-color: black;
+    border: 1px solid white;
+    width: 350px;
+    height: 0px;
+    min-width: 260px;
+    transition: height .5s ease-in-out 0s;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuLinks
+{
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+
+.menuLinks li
+{
+    padding: 15px 0px 15px 0px;
+}
+
+#social
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+#social img
+{
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+}
+
+.socialLinks
+{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 3px solid transparent;
+}
+
+.socialLinks:hover
+{
+    border: 3px solid red;
+}
+
+.dropdownLinks:hover
+{
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#signIn
+{
+    top: 0px;
+    margin-top: 10px;
+    float: right;
+    color: red;
+    border: 1px dashed red;
+    padding: 3px;
+}
+
+.menuLogo:hover #menuOverlay
+{
+    display: inline-block;
+    height: 400px;
+    z-index: 2;
+}
+
+#homeLogo
+{
+    position: relative;
+    display: inline-block;
+    left: 50px;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    padding: 0 10px 3px 10px;
+}
+
+#homeLogo:hover
+{
+    border-bottom: 10px solid rgba(255, 0, 0, .5);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: .5s ease-in;
+}
+
+#myAccount
+{
+    position: fixed;
+    display: inline-block;
+    right: 50px;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    padding: 0 10px 3px 10px;
+}
+
+#myAccount:hover
+{
+    border-bottom: 10px solid rgba(255, 0, 0, .5);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: .5s ease-in;
+
+}
+
+.shopContain
+{
+    position: relative;
+    display: inline-block;
+}
+
+.shopContain:hover #overlay
+{
+    display: inline-block;
+    height: 400px;
+    z-index: 2;
+}
+
+.shopContain:hover #shopCartButt
+{
+    border: 1px solid white;
+    z-index: 3;
+}
+
+#shopCartButt
+{
+    top: 0;
+    right: 0;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    z-index: 2;
+    background-color: transparent;
+}
+
+#shopCartButt:hover
+{
+    border: 1px solid white;
+    z-index: 3;
+}
+
+#shopCart
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    float: right;
+}
+
+#overlay
+{
+    position: fixed;
+    color: white;
+    right: 0;
+    top: 0;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    background-color: black;
+    border: 1px solid white;
+    width: fit-content;
+    height: 0px;
+    max-width: 300px;
+    min-width: 160px;
+    max-height: 350px;
+    transition: height .5s ease-in-out 0s;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#overlay h1
+{
+    text-align: left;
+    font-size: 10pt;
+}
+
+#overlayText
+{
+    margin-top: 40px;
+}
+
+#quickShop
+{
+    border: 1px solid white;
+    background-color: lightgreen;
+    width: 270px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#placeOrder
+{
+    border: 1px solid white;
+    background-color: lightgreen;
+    width: 270px;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#stickyBox
+{
+    position: sticky;
+    top: 53px;
+    left: 10px;
+    width: 45%;
+    height: 88vh;
+    background-color: blanchedalmond;
+    border: 5px solid black;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+    float: left;
+}
+
+.itemBoxes
+{
+    float: right;
+    right: 10px;
+}
+
+.itemBoxes li
+{
+    display: inline-block;
+    height: 400px;
+    width: 250px;
+    border: 5px solid black;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    list-style-type: none;
+    background-color: blanchedalmond;
+}
+
+.boxes
+{
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;  
+    width: 50%;
+    position: relative;
+}
+
+#bodyLogo
+{
+    width: 80vw;
+    height: fit-content;
+    top: 55px;
+    float: left;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+#buttonLogo
+{
+    position: relative;
+    float: right;
+    top: -250px;
+}
+
+#buttLogo
+{
+    height: 300px;
+    width: 600px;
+}
+
+#bodyLogo p
+{
+    position: relative;
+    font-size: 100pt;
+    z-index: 1;
+    color: white;
+}
+
+#bodyLogo h1
+{
+    position: relative;
+    top: 53px;
+    font-size: 100pt;
+    z-index: 1;
+    color: white;
+}
+
+#bodyLogo h3
+{
+    font-size: 75pt;
+    width: 50vw;
+    color: darkred;
+}
+
+#bodyLogo h4
+{
+    font-size: 30pt;
+    width: 50vw;
+}
+
+footer
+{
+    background-color: black;
+    height: 40px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    color: white;
+    position: fixed;
+}
+
+.footer1
+{
+    text-align: left;
+    bottom: 0;
+    top: 10px;
+    position: relative;
+}
