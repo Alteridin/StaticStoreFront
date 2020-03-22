@@ -2,6 +2,7 @@
 {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header
@@ -34,14 +35,12 @@ a:visited
     height: 40px;
     position: fixed;
     background-color: black;
-    flex-direction: row;
 }
 
 .centerText
 {
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25pt;
     z-index: 3;
 }
@@ -117,9 +116,8 @@ a:visited
     min-width: 260px;
     transition: height .5s ease-in-out 0s;
     overflow: hidden;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 1.2);
     z-index: -1;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .menuLinks
@@ -128,7 +126,6 @@ a:visited
     margin-top: 50px;
     text-align: center;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20pt;
 }
 
@@ -198,7 +195,6 @@ a:visited
     left: 50px;
     top: 10px;
     z-index: 1;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
     padding: 0 10px 7px 10px;
 }
@@ -218,7 +214,6 @@ a:visited
     right: 50px;
     top: 10px;
     z-index: 1;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
     padding: 0 10px 7px 10px;
 }
@@ -297,9 +292,8 @@ a:visited
     max-height: 350px;
     transition: height .5s ease-in-out 0s;
     overflow: hidden;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 1.2);
     z-index: -1;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #overlay h1
@@ -323,6 +317,13 @@ a:visited
     border-radius: 5px 5px 5px 5px;
 }
 
+#quickShop:hover
+{
+    border-color: white;
+    background-color: darkolivegreen;
+    color: white;
+}
+
 #placeOrder
 {
     border-color: transparent;
@@ -330,6 +331,13 @@ a:visited
     width: 270px;
     cursor: pointer;
     border-radius: 5px 5px 5px 5px;
+}
+
+#placeOrder:hover
+{
+    border-color: white;
+    background-color: darkolivegreen;
+    color: white;
 }
 
 #stickyBox
@@ -341,7 +349,7 @@ a:visited
     height: 80vh;
     border: 5px solid black;
     background-color: blanchedalmond;
-    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px 0px rgba(0, 0, 0, 1.2);
     float: left;
 }
 
@@ -367,16 +375,17 @@ a:visited
     list-style-type: none;
     background-color: blanchedalmond;
     cursor: pointer;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 1.2);
 }
 
 .boxes
 {
     text-align: center;
     font-size: 15pt;
-    font-family: Arial, Helvetica, sans-serif;
     float: right;  
     width: 50%;
     position: relative;
+    font-weight: bold;
 }
 
 .boxes img
@@ -384,11 +393,11 @@ a:visited
     width: 90%;
     display: inline-block;
     margin-top: 20px;
+    border: 3px solid black;
 }
 
 .boxes p
 {
-    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     font-size: 10pt;
     height: 75px;
@@ -396,11 +405,11 @@ a:visited
     margin-left: 5px;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-weight: normal;
 }
 
 .boxes button
 {
-    display: inline-block;
     background-color: lightgreen;
     margin-top: 10px;
     width: 80px;
@@ -408,6 +417,14 @@ a:visited
     border-radius: 5px 5px 5px 5px;
     border-color: transparent;
     margin: 0 5px 0 5px;
+    bottom: 3px;
+}
+
+.boxButt:hover
+{
+    border-color: white;
+    background-color: darkolivegreen;
+    color: white;
 }
 
 #bodyLogo
@@ -417,7 +434,6 @@ a:visited
     top: 55px;
     float: left;
     margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 25px;
 }
 
@@ -471,15 +487,116 @@ footer
     width: 100vw;
     bottom: 0;
     left: 0;
+    right: 0;
     color: white;
     position: fixed;
+    display: inline-block;
+    z-index: 2;
 }
 
 .footer1
 {
     text-align: left;
     bottom: 0;
-    left: 10px;
+    left: 30px;
     top: 10px;
     position: relative;
+    float: left;
+}
+
+.help
+{
+    position: fixed;
+    bottom: 0;
+    left: 48%;
+    z-index: 2;
+}
+
+#helpButt
+{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px;
+    height: 40px;
+    width: 80px;
+    z-index: 3;
+    text-align: center;
+}
+
+#helpButt:hover
+{
+    border: 1px solid white;
+}
+
+#helpOverlay
+{
+    position: fixed;
+    color: white;
+    bottom: 0;
+    left: 42%;
+    padding: 0px 10px 10px 10px;
+    background-color: black;
+    border: 1px solid white;
+    width: fit-content;
+    height: 0px;
+    max-width: 300px;
+    min-width: 160px;
+    max-height: 350px;
+    transition: height .5s ease-in-out 0s;
+    overflow: hidden;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 1.2);
+    z-index: -1;
+    opacity: 0;
+}
+
+#helpButt:hover + #helpOverlay
+{
+    height: 400px;
+    z-index: 1;
+    position: fixed;
+    opacity: unset;
+    bottom: 41px;
+}
+
+#helpOverlay:hover
+{
+    height: 400px;
+    z-index: 1;
+    position: fixed;
+    opacity: unset;
+    bottom: 41px;
+}
+
+.helpText
+{
+    text-align: center;
+}
+
+.helpLinks
+{
+    border-color: transparent;
+    background-color: lightgreen;
+    width: 270px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.helpLinks:hover
+{
+    border-color: white;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+.footer2
+{
+    text-align: left;
+    right: 30px;
+    top: 10px;
+    position: relative;
+    float: right;
 }
